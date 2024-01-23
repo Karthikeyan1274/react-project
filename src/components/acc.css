@@ -1,0 +1,11 @@
+.z {
+    background-color: #000; /* Set the background color to black */
+  }
+  .textt{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+  }
+  .wholeacc{
+    background-color:rgb(19, 17, 17) ;
+  }
