@@ -12,9 +12,11 @@ import { allproduct } from "./Allproduct";
 import AppBar from "./AppBar1";
 import logo2 from '../image/logo2.png';
 import'./Menu.css'
+import NewFooter from './NewFooter'
 
 import Slide from "./Slide.jsx";
 import SimpleSlider from "./Recent.jsx";
+
 const Home = () => {
   const [show, setShow] = useState(false);
 
@@ -42,8 +44,9 @@ const Home = () => {
 </div>
 
           <Nav className="justify-content-end">
-            <Nav.Link href="/Home" style={{color:"white"}}>Home</Nav.Link>
-            <Nav.Link href="/Menu"  style={{color:"white"}}>Menu</Nav.Link>
+            <Nav.Link href="/Menu" style={{color:"white"}}>Home</Nav.Link>
+            
+            <Nav.Link href="/Shop"  style={{color:"white"}}>Shop</Nav.Link>
             <Nav.Link href="/Login"  style={{color:"white"}}>Account</Nav.Link>
           </Nav>
         </Container>
@@ -54,42 +57,45 @@ const Home = () => {
 <div className="text">
 <b>Laptops That Bring Out the Best In You</b><br/>
 While tablets and smartphones are still popular, most people agree that everything, from doing research for an assignment to playing hardcore games, works better on a laptop. It doesn't matter what your lifestyle is, there is always one for you at Croma.
+<br/><br/>
 <SimpleSlider/>
- <div className='view'>
-{allproduct.map((a,index)=>(
- <div class="card5">
-  <div class="header">
+<br/>
 
-    <img src={a.url}  className='sss'></img>
-  </div>
-
-  <p class="message">
-  {a.name}
-  </p>
-
-  <div class="actions">
-    <a class="read" href="">
-      Take a Look
-    </a>
-
-    <a class="mark-as-read" href="">
-     VIEW
-    </a>
-  </div>
- 
-</div>
- ))
-}
-</div>
 
 <b><h1>Latest Laptops For You</h1></b>
-<div className='text'>
-<div className='text10'>
-<div className='text7'>
-<div className='text8'> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1705918552/Croma%20Assets/CMS/New%20at%20croma/HP%20Spectre/pcp_2split_HP_22Jan24_egmejl.png?tr=w-720"  width={600} height={400} style={{marginLeft:"150px"}}/></div></div>
-<div className='text8'> <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1699431751/Croma%20Assets/CMS/PCP/Laptop/08-11-2023/pcp_2split_LP_Macbook_8Nov2023_uvior2.png?tr=w-720"  width={600} height={400} style={{marginLeft:"150px",gap:"60px"}}/></div>
- </div></div>
+<div>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1699431751/Croma%20Assets/CMS/PCP/Laptop/08-11-2023/pcp_2split_LP_Macbook_8Nov2023_uvior2.png?tr=w-1024" style={{width:"500px",marginRight:"100px",marginBottom:"20px"}}></img>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1705918552/Croma%20Assets/CMS/New%20at%20croma/HP%20Spectre/pcp_2split_HP_22Jan24_egmejl.png?tr=w-1024"  style={{width:"500px",marginBottom:"20px"}}></img>
 </div>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1699431752/Croma%20Assets/CMS/PCP/Laptop/08-11-2023/PCP_4Split_Newatcroma_Laptop_Corei5_8Nov2023_wtf0cw.png?tr=w-1024" style={{width:"250px",marginRight:"32px"}}></img>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1699431759/Croma%20Assets/CMS/PCP/Laptop/08-11-2023/PCP_4Split_Newatcroma_Laptop_HP12Gen_8Nov2023_yjobie.png?tr=w-1024" style={{width:"250px",marginRight:"32px"}}></img>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1699431758/Croma%20Assets/CMS/PCP/Laptop/08-11-2023/PCP_4Split_Newatcroma_Laptop_Dell_8Nov2023_rmrwul.png?tr=w-1024" style={{width:"250px",marginRight:"32px"}}></img>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1699431759/Croma%20Assets/CMS/PCP/Laptop/08-11-2023/PCP_4Split_Newatcroma_Laptop_HPAMD_8Nov2023_wjeymz.png?tr=w-1024" style={{width:"250px",marginRight:"32px"}}></img>
+<div>
+  <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1700056295/Croma%20Assets/CMS/LP%20Page%20Banners/2023/Unidays/15th%20Nov%202023/Unidays%20Laptop%20PCP/LP_Singlesplit_Uniday_FOD_15Nov23_yuvw3l.jpg?tr=w-1024" style={{width:"1100px"}}></img>
+</div>
+
+<b><h1>Hot Deals in Apple</h1></b>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1698404079/Croma%20Assets/CMS/LP%20Page%20Banners/PCP/PCP_2Split_Macbooks_M1_27Oct2023_d4vshw.png?tr=w-1024" style={{width:"500px",marginRight:"100px",marginBottom:"20px"}}></img>
+<img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1700484672/Croma%20Assets/CMS/PCP/Laptop/20-11-2023/PCP_2Split_Macbooks_20Nov2023_w8wtde.png?tr=w-1024" style={{width:"500px",marginBottom:"20px"}}></img>
+
+<div style={{backgroundColor:"black"}}>
+<b><h1>Top Deals For Students</h1></b>
+<SimpleSlider/>
+<br/>
+</div>
+<br/>
+<b><h1>Best Offers for Professionals</h1></b>
+<SimpleSlider/>
+
+<b><h1>Great Deals on Gaming Laptops</h1></b>
+<SimpleSlider/>
+
+
+
+
+</div>
+<NewFooter/>
 </div>
  </>
   )

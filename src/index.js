@@ -11,6 +11,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Aboutus from './components/Aboutus';
 import CreateAccount from './components/CreateAccount';
+import Shop from './components/Shop';
+import View from './components/View';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,7 +25,9 @@ root.render(
       <Route path="/Login" element={<Login/>}></Route>
       <Route path="/Aboutus" element={<Aboutus/>}></Route>
       <Route path="/Menu" element={<App/>}></Route>
+      <Route path="/Shop" element={<Shop/>}></Route>
       <Route path="/CreateAccount" element={<CreateAccount/>}></Route>
+      <Route path="/View" element={<View/>}></Route>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

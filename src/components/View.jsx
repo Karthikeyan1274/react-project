@@ -1,16 +1,16 @@
+import React from 'react'
+import logo2 from '../image/logo2.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo2 from '../image/logo2.png';
-import'.//AppBar.css';
-function AppBar() {
+import NewFooter from './NewFooter';
+import'./Menu.css'
+import CustomizedAccordions from './Lapacc'
+const View = () => {
   return (
     <>
-    
-   
-      
-      <Navbar bg="black" data-bs-theme="black">
+    <div style={{color:"lightgrey",backgroundColor:"rgb(19, 17, 17)"}}>
+       <Navbar bg="black" data-bs-theme="black">
         <Container>
           <Navbar.Brand href="#home"><img src={logo2} className='logo'></img></Navbar.Brand>
           <div class="group">
@@ -25,19 +25,26 @@ function AppBar() {
 </div>
 
           <Nav className="justify-content-end">
+            <Nav.Link href="/Menu" style={{color:"white"}}>Home</Nav.Link>
             
-            <Nav.Link href="/Home"  style={{color:"white"}}>Menu</Nav.Link>
             <Nav.Link href="/Shop"  style={{color:"white"}}>Shop</Nav.Link>
             <Nav.Link href="/Login"  style={{color:"white"}}>Account</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-
-     
-    </>
-
     
-  );
+    
+ <div className='text10'>
+<div className='text8'> <img src="https://m.media-amazon.com/images/I/518BYF8LHRL._AC_UY218_.jpg"  width={600} height={400} style={{marginLeft:"150px"}}/></div>
+<div className='text7'>
+ <div className='text2' style={{marginTop:"100px"}}><div className='text4'style={{marginLeft:'10px',marginTop:"0px"}}><b>Laptop Name</b>​<br/>Laptop Descreption<br/>Price:$100000000000000<br/>⭐⭐⭐⭐</div><button>Add to Cart</button> <button>BUY</button></div>
+</div></div>
+<br/>
+<CustomizedAccordions/> 
+    <NewFooter/>
+    </div>
+    </>
+  )
 }
 
-export default AppBar;
+export default View
